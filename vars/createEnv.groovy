@@ -5,7 +5,7 @@
         // Accumulate the map entries into standard env file format                                                                             
         def envContent = ""                                                                                                                     
         envVars.each { key, value ->                                                                                                            
-            envContent += "key ={value}\n"                                                                                                      
+            envContent += "${key}=${value}\n"                                                                                                      
         }                                                                                                                                       
                                                                                                                                                 
         // Write content to a temporary workspace .env file                                                                                     

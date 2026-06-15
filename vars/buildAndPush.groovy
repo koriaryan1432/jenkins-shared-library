@@ -5,7 +5,7 @@
         // - buildContext: e.g., './backend'                                                                                                    
         // - buildTag: e.g., env.BUILD_NUMBER                                                                                                   
                                                                                                                                                 
-        String fullImageName = "config.imageName:{config.buildTag}"                                                                             
+        String fullImageName = "${config.imageName}:${config.buildTag}"                                                                             
                                                                                                                                                 
         echo "📦 Building Docker image: ${fullImageName}..."                                                                                    
         if (isUnix()) {                                                                                                                         
